@@ -30,15 +30,15 @@ graph TD
     LRSeq --> LS[PacBio Iso-Seq, FLAIR, TALON]
 
     %% Proteomics Pipeline
-    Proteomics --> MS[Mass Spectrometry Data Analysis]
-    Proteomics --> PPI[Protein-Protein Interaction (PPI)]
+    Proteomics --> MS[Mass Spec Analysis]
+    Proteomics --> PPI[Protein Interaction]
     Proteomics --> SP[Structural Proteomics]
     MS --> MT[MaxQuant, Mascot, Perseus]
     PPI --> PP[STRING, Cytoscape, iRefWeb]
     SP --> ST[Phenix, RELION, Rosetta]
 
     %% Metabolomics Pipeline
-    Metabolomics --> MD[MS & NMR Data Analysis]
+    Metabolomics --> MD[MS & NMR Analysis]
     Metabolomics --> PM[Pathway Mapping]
     Metabolomics --> BD[Biomarker Discovery]
     MD --> MDX[XCMS, MetaboAnalyst, MZmine]
@@ -46,11 +46,11 @@ graph TD
     BD --> BT[MetaboAnalyst, SIMCA]
 
     %% Epigenomics Pipeline
-    Epigenomics --> DMA[DNA Methylation Analysis]
-    Epigenomics --> HMA[Histone Modification Analysis]
+    Epigenomics --> DMA[DNA Methylation]
+    Epigenomics --> HMA[Histone Mod Analysis]
     Epigenomics --> ATAC[ATAC-Seq]
     DMA --> DMT[Bismark, methylKit, MethylSig]
-    HMA --> HM[ChIP-Seq analysis with MACS2, DiffBind]
+    HMA --> HM[MACS2, DiffBind]
     ATAC --> ATA[ATACseqQC, MACS2, Homer]
 
     %% Microbiomics Pipeline
@@ -63,14 +63,14 @@ graph TD
 
     %% Phenomics Pipeline
     Phenomics --> IA[Image Analysis]
-    Phenomics --> QTL[Quantitative Trait Locus Mapping]
-    Phenomics --> HTP[High-Throughput Phenotyping]
+    Phenomics --> QTL[QTL Mapping]
+    Phenomics --> HTP[High-Throughput Pheno]
     IA --> IP[ImageJ, PlantCV]
     QTL --> QT[R/qtl, MapQTL]
     HTP --> HT[PhenoBox, PhenoDyn]
 
     %% Lipidomics Pipeline
-    Lipidomics --> LI[Lipid Identification and Quantification]
+    Lipidomics --> LI[Lipid Quantification]
     Lipidomics --> LPA[Pathway Analysis]
     Lipidomics --> LBD[Biomarker Discovery]
     LI --> LIT[LipidSearch, MZmine, LipiDex]
@@ -78,7 +78,7 @@ graph TD
     LBD --> LB[MetaboAnalyst, SIMCA]
 
     %% Glycomics Pipeline
-    Glycomics --> GI[Glycan Identification and Quantification]
+    Glycomics --> GI[Glycan Quantification]
     Glycomics --> GP[Glycoproteomics]
     Glycomics --> GPA[Glycan Pathway Analysis]
     GI --> GT[GlycoWorkbench, SimGlycan]
